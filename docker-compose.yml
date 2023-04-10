@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  opensips:
+    image: opensips/opensips:3.3
+    restart: always
+    volumes:
+      - ./opensips_config:/etc/opensips
+    network_mode: host
